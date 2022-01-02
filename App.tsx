@@ -1,5 +1,6 @@
 import React from "react";
 import { SafeAreaView, StyleSheet, View } from "react-native";
+import Color from "./components/properties/color";
 import Opacity from "./components/properties/opacity";
 import Position from "./components/properties/position";
 import Scale from "./components/properties/scale";
@@ -8,14 +9,13 @@ import Translate from "./components/properties/translate";
 
 export default function App() {
   return (
-    <SafeAreaView>
-      <View style={styles.container}>
-        {/* <Opacity /> */}
-        {/* <Translate /> */}
-        {/* <Scale /> */}
-        {/* <Size /> */}
-        <Position />
-      </View>
+    <SafeAreaView style={styles.container}>
+      {/* <Opacity /> */}
+      {/* <Translate /> */}
+      {/* <Scale /> */}
+      {/* <Size /> */}
+      {/* <Position /> */}
+      <Color />
     </SafeAreaView>
   );
 }
