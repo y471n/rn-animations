@@ -1,10 +1,5 @@
 import React, { useRef } from "react";
-import {
-  View,
-  StyleSheet,
-  TouchableWithoutFeedback,
-  Animated,
-} from "react-native";
+import { StyleSheet, TouchableWithoutFeedback, Animated } from "react-native";
 
 const Opacity = () => {
   const opacityAnim = useRef(new Animated.Value(1)).current;
@@ -14,7 +9,13 @@ const Opacity = () => {
       toValue: 0,
       duration: 1000,
       useNativeDriver: false,
-    }).start();
+    }).start(() => {
+      Animated.timing(opacityAnim, {
+        toValue: 1,
+        duration: 1000,
+        useNativeDriver: false,
+      }).start();
+    });
   };
 
   return (
