@@ -1,5 +1,6 @@
 import React from "react";
 import { SafeAreaView, StyleSheet, View } from "react-native";
+import Spring from "./components/func/spring";
 import Color from "./components/properties/color";
 import Opacity from "./components/properties/opacity";
 import Position from "./components/properties/position";
@@ -17,7 +18,8 @@ export default function App() {
       {/* <Size /> */}
       {/* <Position /> */}
       {/* <Color /> */}
-      <Rotate />
+      {/* <Rotate /> */}
+      <Spring />
     </SafeAreaView>
   );
 }
