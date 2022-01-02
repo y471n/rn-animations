@@ -3,6 +3,7 @@ import { SafeAreaView, StyleSheet, View } from "react-native";
 import Color from "./components/properties/color";
 import Opacity from "./components/properties/opacity";
 import Position from "./components/properties/position";
+import Rotate from "./components/properties/rotate";
 import Scale from "./components/properties/scale";
 import Size from "./components/properties/size";
 import Translate from "./components/properties/translate";
@@ -15,7 +16,8 @@ export default function App() {
       {/* <Scale /> */}
       {/* <Size /> */}
       {/* <Position /> */}
-      <Color />
+      {/* <Color /> */}
+      <Rotate />
     </SafeAreaView>
   );
 }
